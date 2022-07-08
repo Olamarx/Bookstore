@@ -1,0 +1,15 @@
+.body {
+  padding: 10px 40px;
+  border: 2px solid rgb(226, 226, 226);
+  margin: 20px 40px;
+}
+
+.action {
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border: 2px solid rgb(226, 226, 226);
+  margin: 20px 40px;
+}
