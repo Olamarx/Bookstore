@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav';
-import ActionNameButton from './components/BookComponent/ActionNameButton';
+import eachBook from './components/BookComponent/eachBook';
 import Percentage from './components/BookComponent/Percentage';
 import style from './BookPage.module.css';
 import AddBook from './components/BookComponent/AddBook';
@@ -11,7 +11,7 @@ function BookPage() {
       <Nav />
       <div className={style.body}>
         <div className={style.action}>
-          <ActionNameButton
+          <eachBook
             userName="Olaoluwa Owoeye"
             gameName="Sokudo"
             category="Moon"
