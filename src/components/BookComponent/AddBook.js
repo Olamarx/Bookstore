@@ -10,7 +10,7 @@ function AddBookForm() {
     title: '',
     category: '',
     author: '',
-    id: '',
+    item_id: '',
   });
 
   // Changing state
@@ -27,7 +27,7 @@ function AddBookForm() {
   // submit
   const submitForm = (e) => {
     e.preventDefault();
-    dispatch(AddBook({ ...singleBook, id: uuidv4() }));
+    dispatch(AddBook({ ...singleBook, item_id: uuidv4() }));
     document.querySelector('.form-input').reset();
   };
   return (
@@ -42,7 +42,6 @@ function AddBookForm() {
           <option value="Science Fiction">Science Fiction</option>
           <option value="Economy">Economy</option>
         </select>
-
         <input type="submit" value="ADD BOOK" />
       </form>
     </div>
