@@ -36,7 +36,7 @@ function AddBookForm() {
       <form name="addBook" onSubmit={submitForm} className="form-input">
         <input type="text" name="title" placeholder="Book title" onChange={changeFunc} required />
         <input type="text" name="author" placeholder="Author name" onChange={changeFunc} required />
-        <select>
+        <select name="category" onChange={changeFunc} required>
           <option value="" defaultValue>category</option>
           <option value="Action">Action</option>
           <option value="Science Fiction">Science Fiction</option>
