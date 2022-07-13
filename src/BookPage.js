@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 import Nav from './components/Nav';
