@@ -1,44 +1,28 @@
-import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
+import { deleteBook, bookEndPoint } from '../../components/API';
+
 // Actions
-const Actions = [
-  { ADD: 'bookstore/book/ADD' },
-  { REMOVE: 'bookstore/book/REMOVE' },
-];
+const Actions = {
+  ADD: 'bookstore/book/ADD',
+  REMOVE: 'bookstore/book/REMOVE',
+  LOAD: 'bookstore/book/LOAD',
+};
 // state initialized as array
 
-const initialState = [
-  {
-    id: uuidv4(),
-    title: 'The First Game',
-    author: 'Suarez',
-    topic: 'Actions',
-    category: 'Economy',
-  },
-  {
-    id: uuidv4(),
-    title: 'The Second Science',
-    author: 'Daniel',
-    topic: '',
-    category: 'Science Fiction',
-  },
-  {
-    id: uuidv4(),
-    title: 'The First Game',
-    author: 'Suarez',
-    topic: 'Actions',
-    category: 'Action',
-  },
-];
+const initialState = [];
 
 // Reducer
 const reducer = (state = initialState, action) => {
   const { payLoad } = action;
   switch (action.type) {
-    case Actions[0].ADD:
+    case Actions.ADD:
       return [...state, payLoad.book];
 
-    case Actions[1].REMOVE:
-      return state.filter((book) => book.id !== payLoad.id);
+    case Actions.LOAD:
+      return [...payLoad];
+
+    case Actions.REMOVE:
+      return state.filter((book) => book.item_id !== payLoad.id);
 
     default:
       return state;
@@ -46,7 +30,50 @@ const reducer = (state = initialState, action) => {
 };
 
 // The Action   Creators
-export const AddBook = (book) => ({ type: Actions[0].ADD, payLoad: { book } });
-export const RemoveBook = (id) => ({ type: Actions[1].REMOVE, payLoad: { id } });
+export const booksFromAPI = () => async (dispatch) => {
+  const response = await axios.get(bookEndPoint());
+  if (response.status === 200) {
+    const payLoad = Object.keys(response.data).map((valu) => ({
+      item_id: valu,
+      ...response.data[valu][0],
+    }));
+
+    dispatch({
+      type: Actions.LOAD,
+      payLoad,
+    });
+  }
+};
+
+export const AddBook = (book) => async (dispatch) => {
+  try {
+    const response = await axios.post(bookEndPoint(), book);
+    if (response.status === 201) {
+      return dispatch({
+        type: Actions.ADD,
+        payLoad: { book },
+      });
+    }
+
+    throw new Error();
+  } catch (error) {
+    return 'Book save was unsuccessful';
+  }
+};
+
+export const RemoveBook = (id) => async (dispatch) => {
+  try {
+    const response = await axios.delete(deleteBook(id));
+    if (response.status === 201) {
+      return dispatch({
+        type: Actions.REMOVE,
+        payLoad: { id },
+      });
+    }
+    throw new Error();
+  } catch (error) {
+    return 'Book not deleted';
+  }
+};
 
 export default reducer;
