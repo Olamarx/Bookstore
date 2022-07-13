@@ -1,12 +1,9 @@
 import React from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
 
 function Percentage() {
   return (
     <div>
-      <div style={{ width: 200, height: 200, color: 'green' }}>
-        <CircularProgressbar value={66} />
-      </div>
+      <div />
       <div>
         <span>
           60%
