@@ -7,6 +7,6 @@ const reducerReal = combineReducers({
   Categories,
 });
 
-const theStore = configureStore( {reducer: reducerReal});
+const theStore = configureStore({ reducer: reducerReal });
 
 export default theStore;

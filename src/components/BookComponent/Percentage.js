@@ -3,8 +3,7 @@ import React from 'react';
 function Percentage() {
   return (
     <div>
-      <div>
-      </div>
+      <div />
       <div>
         <span>
           60%
