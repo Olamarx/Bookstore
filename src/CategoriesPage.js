@@ -6,13 +6,13 @@ import { Category } from './redux/categories/categories';
 function CategoriesPage() {
   const dispatch = useDispatch();
 
-  const position = useSelector((state) => state.categories);
+  const position = useSelector((state) => state.Categories);
   return (
     <>
       <Nav />
       <div>Categories</div>
       <button type="button" onClick={() => dispatch(Category())}>
-        Status
+        Check Status
       </button>
       <p>{position}</p>
     </>
