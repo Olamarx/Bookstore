@@ -8,14 +8,14 @@ function CategoriesPage() {
 
   const position = useSelector((state) => state.Categories);
   return (
-    <>
+    <div style={{ border: '10px solid grey', height: '100vh' }}>
       <Nav />
       <div>Categories</div>
       <button type="button" onClick={() => dispatch(Category())}>
         Check Status
       </button>
       <p>{position}</p>
-    </>
+    </div>
   );
 }
 
