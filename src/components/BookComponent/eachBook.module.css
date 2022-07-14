@@ -1,0 +1,76 @@
+.leftBody {
+  background-color: green;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ulBody {
+  font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ 
+.ulBody ul {
+  list-style: none;
+  /* background-color: red; */
+  opacity: 0.5;
+}
+
+.category { 
+  /* margin: 0 2.438rem 0 0; */
+  opacity: 0.5;
+  font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  width: 12.313rem;
+  height: 1.813rem;
+  font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author{
+  width: 6.688rem;
+  height: 1.188rem;
+  font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button button {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
