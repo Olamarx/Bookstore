@@ -11,7 +11,7 @@ In this project, I am to create a Bookstore with React framework.
 
 ## Live Demo
 
-[Live Demo Link(Not yet live)]()
+[Live Demo Link(Vercel)](https://bookstore-six-hazel.vercel.app/)
 
 
 ## Getting Started
