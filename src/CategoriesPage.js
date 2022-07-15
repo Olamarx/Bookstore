@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Nav from './components/Nav';
 import { Category } from './redux/categories/categories';
-import style from './CategoriesPage.module.css'
+import style from './CategoriesPage.module.css';
 
 function CategoriesPage() {
   const dispatch = useDispatch();
