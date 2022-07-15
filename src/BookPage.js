@@ -13,7 +13,7 @@ function BookPage() {
     dispatch(booksFromAPI());
   }, []);
   return (
-    <div style={{ border: '10px solid grey', height: '100vh' }}>
+    <div style={{ border: 'solid 3px #e8e8e8', height: '100vh' }}>
       <Nav />
       <div className={style.body}>
         <div className={style.action}>
