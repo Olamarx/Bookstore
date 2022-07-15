@@ -31,7 +31,7 @@ function Percentage() {
       <div className={style.greyDiv} />
 
       <div className={style.lastRow}>
-        <span>
+        <span className={style.spanCon}>
           <h2>CURRENT CHAPTER</h2>
           <h3>chapter</h3>
         </span>
