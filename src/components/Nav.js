@@ -8,11 +8,11 @@ function Nav() {
     <nav className={style.nav}>
       <div>
         <h1>Bookstore CMS</h1>
-        <ul>
+        <ul className={style.ul}>
           <li>
             <NavLink
               to="/"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              className={(Link) => (Link.isActive ? style.activeClass : '')}
             >
               Books
             </NavLink>
@@ -20,7 +20,7 @@ function Nav() {
           <li>
             <NavLink
               to="/categories"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              className={(Link) => (Link.isActive ? style.activeClass : '')}
             >
               Categories
             </NavLink>
