@@ -1,15 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Slab:wght@100;400;700&display=swap');
+
 .body {
-  padding: 10px 40px;
-  border: 2px solid rgb(226, 226, 226);
-  margin: 20px 40px;
+  padding: 10px 0;
+  margin: 20px 20px;
 }
 
 .action {
   display: flex;
-  background-color: aqua;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  border: 2px solid rgb(226, 226, 226);
-  margin: 20px 40px;
+  flex-direction: column;
+  gap: 20px;
 }

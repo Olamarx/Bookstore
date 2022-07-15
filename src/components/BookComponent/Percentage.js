@@ -1,24 +1,41 @@
 import React from 'react';
+import { CircularProgressBar } from '@tomik23/react-circular-progress-bar';
+import style from './Percentage.module.css';
 
 function Percentage() {
+  const random = Math.floor(Math.random() * 100);
   return (
-    <div>
-      <div />
-      <div>
-        <span>
-          60%
-        </span>
-        <span>
-          Completed
-        </span>
+    <div className={style.mainBody}>
+      <div className={style.body}>
+        <CircularProgressBar
+          number={false}
+          percent={random}
+          strokeDasharray=""
+          unit=""
+          fontColor="#379cf6"
+          speed={150}
+          size={100}
+        />
+
+        <div className={style.com}>
+          <span className={style.randPer}>
+            {random}
+            %
+          </span>
+          <span className={style.isCom}>
+            Completed
+          </span>
+        </div>
       </div>
 
-      <div>grey line</div>
+      <div className={style.greyDiv} />
 
-      <div>
-        <h2>CURRENT CHAPTER</h2>
-        <h3>chapter</h3>
-        <button type="button">Update Progress</button>
+      <div className={style.lastRow}>
+        <span className={style.spanCon}>
+          <h2>CURRENT CHAPTER</h2>
+          <h3>chapter</h3>
+        </span>
+        <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );
