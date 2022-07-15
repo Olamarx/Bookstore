@@ -14,12 +14,11 @@
   margin: 30px 20px;
 }
 
- 
 .ulBody ul {
   list-style: none;
 }
 
-.category { 
+.category {
   opacity: 0.5;
   font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.875rem;
@@ -44,7 +43,7 @@
   color: black;
 }
 
-.author{
+.author {
   width: 6.688rem;
   height: 1.188rem;
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
