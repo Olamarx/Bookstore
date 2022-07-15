@@ -1,5 +1,5 @@
 .leftBody {
-  background-color: green;
+  border: 2px solid rgb(226, 226, 226);
   height: 70%;
   width: 100%;
   display: flex;
@@ -9,17 +9,17 @@
 
 .ulBody {
   font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 10rem;
+  height: 3.625rem;
+  margin: 30px 20px;
 }
 
  
 .ulBody ul {
   list-style: none;
-  /* background-color: red; */
-  opacity: 0.5;
 }
 
 .category { 
-  /* margin: 0 2.438rem 0 0; */
   opacity: 0.5;
   font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.875rem;
@@ -35,13 +35,13 @@
   width: 12.313rem;
   height: 1.813rem;
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.775rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: black;
 }
 
 .author{
@@ -72,5 +72,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  cursor: pointer;
   color: #4386bf;
+  border: none;
 }
