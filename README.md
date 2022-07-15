@@ -1,5 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+## Mockup of the Site
+<p align="center">
+  <img
+  src="./src/images/bookstore.png"
+  alt="Mockup Version"
+  >
+</p>
+
+
 # Bookstore Project
 
 In this project, I am to create a Bookstore with React framework.
