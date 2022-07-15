@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Slab:wght@100;400;700&display=swap');
+
 .leftBody {
-  border: 2px solid rgb(226, 226, 226);
-  height: 70%;
+  border: 1px solid rgb(226, 226, 226);
+  border-top: 0px;
+  border-bottom: 0px;
+  height: 60%;
   width: 100%;
   display: flex;
+  padding: 5px 60px;
   justify-content: space-between;
   align-items: center;
 }
 
 .ulBody {
   font-family: Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 10rem;
-  height: 3.625rem;
   margin: 30px 20px;
 }
 
 .ulBody ul {
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .category {
@@ -36,42 +40,35 @@
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.775rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.2px;
   color: black;
 }
 
 .author {
+
   width: 6.688rem;
   height: 1.188rem;
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #4386bf;
+  font-weight: 400;
+  color:#379cf6;
+
+
 }
 
 .button {
   display: flex;
   justify-content: space-between;
+  width: 300px;
+  font-size: 20px;
 }
 
 .button button {
-  width: 4.563rem;
-  height: 1.188rem;
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  font-weight: 400;
   letter-spacing: normal;
   cursor: pointer;
-  color: #4386bf;
+  color: #379cf6;
   border: none;
+  background-color: transparent;
 }
