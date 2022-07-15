@@ -2,8 +2,8 @@
 
 .leftBody {
   border: 1px solid rgb(226, 226, 226);
-  border-top: 0px;
-  border-bottom: 0px;
+  border-top: 0;
+  border-bottom: 0;
   height: 60%;
   width: 100%;
   display: flex;
@@ -44,15 +44,12 @@
 }
 
 .author {
-
   width: 6.688rem;
   height: 1.188rem;
   font-family: RobotoSlab, Montserrat, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  color:#379cf6;
-
-
+  color: #379cf6;
 }
 
 .button {
