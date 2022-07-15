@@ -56,13 +56,15 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
+
   /* border: 2px solid green; */
 }
 
 .ul li .activeClass {
   font-weight: bold;
 }
-/* 
+
+/*
 a.none {
   opacity: 0.5;
 } */
