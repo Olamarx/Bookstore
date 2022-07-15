@@ -35,7 +35,7 @@ function Percentage() {
           <h2>CURRENT CHAPTER</h2>
           <h3>chapter</h3>
         </span>
-        <button type="button">Update Progress</button>
+        <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );
