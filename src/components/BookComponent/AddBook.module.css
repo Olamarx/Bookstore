@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 30px;
+    border: 2px solid rgb(226, 226, 226);
+    margin: 10px 22px;
+}
+    
+ .Title {
+        width: 10.875rem;
+        height: 1.5rem;
+        margin: 1.813rem 32.75rem 1.188rem 0;
+        font-family: Montserrat;
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.18px;
+        color: #888888;
+      }
+
+.container form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container form > input:nth-child(1) {
+    width: 23rem;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.container form > input:nth-child(2) {
+    width: 20rem;
+    height: 30px;
+}
+
+
+.container form select {
+    width: 15rem;
+    height: 30px;
+}
+
+
+.butt {
+width: 13rem;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #0290ff;
+}
