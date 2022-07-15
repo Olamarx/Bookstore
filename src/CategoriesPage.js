@@ -2,19 +2,20 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Nav from './components/Nav';
 import { Category } from './redux/categories/categories';
+import style from './CategoriesPage.module.css'
 
 function CategoriesPage() {
   const dispatch = useDispatch();
 
   const position = useSelector((state) => state.Categories);
   return (
-    <div style={{ border: '10px solid grey', height: '100vh' }}>
+    <div style={{ border: 'solid 3px #e8e8e8', height: '100vh' }} className={style.container}>
       <Nav />
-      <div>Categories</div>
-      <button type="button" onClick={() => dispatch(Category())}>
+      <div className={style.div}>Categories</div>
+      <button className={style.butt} type="button" onClick={() => dispatch(Category())}>
         Check Status
       </button>
-      <p>{position}</p>
+      <p className={style.para}>{position}</p>
     </div>
   );
 }
