@@ -16,6 +16,7 @@ In this project, I am to create a Bookstore with React framework.
 ## Built With
 
 - React
+- Redux
 - CSS
 
 ## Live Demo
